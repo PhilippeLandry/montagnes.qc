@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2DAAC03474F7782883D440F2 /* Pods_ios_montagnes_qc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9077FDFC51A55449EF6C388 /* Pods_ios_montagnes_qc.framework */; };
 		4B73449B4668A5A7C3630E50 /* Pods_ios_montagnes_qcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4485327266AFE4EBF93A1475 /* Pods_ios_montagnes_qcTests.framework */; };
+		A879997424FC9045006747B1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A879997324FC9045006747B1 /* Podfile */; };
 		A892B79324FC1197004696EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A892B79224FC1197004696EF /* AppDelegate.swift */; };
 		A892B79524FC1197004696EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A892B79424FC1197004696EF /* SceneDelegate.swift */; };
 		A892B79724FC1197004696EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A892B79624FC1197004696EF /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		4485327266AFE4EBF93A1475 /* Pods_ios_montagnes_qcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_montagnes_qcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8189002A8E0334A8E8413611 /* Pods-ios.montagnes.qcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.montagnes.qcTests.release.xcconfig"; path = "Target Support Files/Pods-ios.montagnes.qcTests/Pods-ios.montagnes.qcTests.release.xcconfig"; sourceTree = "<group>"; };
 		9ABED18E47D3250440AC87E1 /* Pods-ios.montagnes.qc-ios.montagnes.qcUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.montagnes.qc-ios.montagnes.qcUITests.debug.xcconfig"; path = "Target Support Files/Pods-ios.montagnes.qc-ios.montagnes.qcUITests/Pods-ios.montagnes.qc-ios.montagnes.qcUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A879997324FC9045006747B1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A892B78F24FC1196004696EF /* ios.montagnes.qc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.montagnes.qc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A892B79224FC1197004696EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A892B79424FC1197004696EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				B28CCAC7A77B9A58066D98C9 /* Pods-ios.montagnes.qcTests.debug.xcconfig */,
 				8189002A8E0334A8E8413611 /* Pods-ios.montagnes.qcTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +119,7 @@
 		A892B78624FC1196004696EF = {
 			isa = PBXGroup;
 			children = (
+				A879997324FC9045006747B1 /* Podfile */,
 				A892B79124FC1196004696EF /* ios.montagnes.qc */,
 				A892B7A824FC1199004696EF /* ios.montagnes.qcTests */,
 				A892B7B324FC1199004696EF /* ios.montagnes.qcUITests */,
@@ -180,6 +182,7 @@
 				A892B78B24FC1196004696EF /* Sources */,
 				A892B78C24FC1196004696EF /* Frameworks */,
 				A892B78D24FC1196004696EF /* Resources */,
+				FD08DDEBBF973E5B49EDB3E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +220,7 @@
 				A892B7AC24FC1199004696EF /* Sources */,
 				A892B7AD24FC1199004696EF /* Frameworks */,
 				A892B7AE24FC1199004696EF /* Resources */,
+				E99E765762DBA7F739941822 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +282,7 @@
 			files = (
 				A892B79F24FC1198004696EF /* LaunchScreen.storyboard in Resources */,
 				A892B79C24FC1198004696EF /* Assets.xcassets in Resources */,
+				A879997424FC9045006747B1 /* Podfile in Resources */,
 				A892B79A24FC1197004696EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +368,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E99E765762DBA7F739941822 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios.montagnes.qc-ios.montagnes.qcUITests/Pods-ios.montagnes.qc-ios.montagnes.qcUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios.montagnes.qc-ios.montagnes.qcUITests/Pods-ios.montagnes.qc-ios.montagnes.qcUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios.montagnes.qc-ios.montagnes.qcUITests/Pods-ios.montagnes.qc-ios.montagnes.qcUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD08DDEBBF973E5B49EDB3E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios.montagnes.qc/Pods-ios.montagnes.qc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios.montagnes.qc/Pods-ios.montagnes.qc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios.montagnes.qc/Pods-ios.montagnes.qc-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

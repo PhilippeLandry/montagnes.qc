@@ -6,7 +6,11 @@ target 'ios.montagnes.qc' do
   use_frameworks!
 
   # Pods for ios.montagnes.qc
+  pod 'Alamofire', '~> 5.2'
+  pod 'RxSwift', '5.0.0'
+  pod 'RxCocoa', '5.0.0'
 
+  
   target 'ios.montagnes.qcTests' do
     inherit! :search_paths
     # Pods for testing
